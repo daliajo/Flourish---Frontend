@@ -39,7 +39,7 @@ Special care was taken to ensure stable layouts, readable typography, and consis
 ---
 
 
-## Project Structure (Simplified)
+## Project Structure
 src/
 ├─ assets/ # images and icons
 ├─ components/ # reusable components
