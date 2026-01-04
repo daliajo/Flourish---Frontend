@@ -1,0 +1,48 @@
+/* Dashboard Page Styles */
+.dashboard {
+  padding: 120px 40px;
+  /* Leaves room for navbar */
+  max-width: 900px;
+  margin: auto;
+  font-family: "Playfair Display", serif;
+  color: #8d1b1b;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.dash-section {
+  margin-bottom: 40px;
+}
+
+
+.dash-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 100px 20px 40px;
+    /* Less side padding, adjusted top */
+    width: 100%;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}

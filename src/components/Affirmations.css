@@ -1,0 +1,47 @@
+.affirmation-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3e1d3;
+  text-align: center;
+}
+
+.affirmation-title {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #8b3f3f;
+  font-weight: bold;
+}
+
+.affirmation-text {
+  font-size: 1.2rem;
+  color: #5a4a3a;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 60px;
+  padding: 1rem;
+  background: #fff9f3;
+  border-radius: 12px;
+  font-style: italic;
+}
+
+.affirmation-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #8d1b1b;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+
+.affirmation-button:hover {
+  background-color: #7a1616;
+}

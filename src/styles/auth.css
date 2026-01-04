@@ -1,0 +1,140 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.auth-card {
+  background: #fff8f3;
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-title {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.auth-field {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.auth-field label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auth-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  background-color: #8d1b1b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #7a1616;
+}
+
+.auth-switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-switch span {
+  color: #8d1b1b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: #fff8f3;
+  padding: 40px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auth-main-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  background-color: #8d1b1b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-switch a {
+  color: #8d1b1b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 20px;
+  }
+
+  .auth-page {
+    padding: 20px;
+    align-items: flex-start;
+    /* Move up slightly on mobile so keyboard doesn't cover */
+    padding-top: 40px;
+  }
+
+  .auth-title {
+    font-size: 24px;
+    /* Scale down title */
+    margin-bottom: 20px;
+  }
+}

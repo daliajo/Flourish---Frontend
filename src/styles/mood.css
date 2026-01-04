@@ -1,0 +1,61 @@
+.mood-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3e1d3;
+  text-align: center;
+}
+
+.mood-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: #8b3f3f;
+  font-weight: bold;
+}
+
+.mood-slider-container {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.mood-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #e0c9b7;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.mood-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #820707;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mood-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #8d1b1b;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mood-display {
+  font-size: 1.3rem;
+  color: #8b3f3f;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,177 @@
+:root {
+  /* light theme */
+  --bg-page-light: #fff7f0;
+  --bg-card-light: #ffffff;
+  --text-main-light: #8d1b1b;
+  --text-muted-light: #5a4a3a;
+
+  /* dark theme */
+  --bg-page-dark: #1c1b1a;
+  --bg-card-dark: #2a2725;
+  /* slightly lighter than page */
+  --border-card-dark: #3a3633;
+  --text-main-dark: #f2ece6;
+  /* warm off-white */
+  --text-muted-dark: #cfc6bc;
+  --accent-red: #8d1b1b;
+}
+
+
+.page-center {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 120px;
+  font-family: "Playfair Display", serif;
+  transition: background-image 0.4s ease;
+}
+
+/* LIGHT THEME */
+.app-wrapper.light {
+  background-image: url("../assets/bgg.png");
+  background-color: var(--bg-page-light);
+  color: var(--text-main-light);
+}
+
+/* DARK THEME */
+.app-wrapper.dark {
+  background-image: url("../assets/dark.png");
+  background-color: var(--bg-page-dark);
+  color: var(--text-main-dark);
+}
+
+
+/* Headings */
+.app-wrapper.dark h1,
+.app-wrapper.dark h2,
+.app-wrapper.dark h3 {
+  color: var(--text-main-dark);
+}
+
+/* Paragraphs */
+.app-wrapper.dark p,
+.app-wrapper.dark span {
+  color: var(--text-muted-dark);
+}
+
+.app-wrapper.dark .nav-links a.active {
+  border-bottom: 2px solid #8d1b1b;
+  /* brand red */
+  color: #f1e1d1;
+}
+
+/* Dark mode – affirmation text */
+.app-wrapper.dark .affirmation-text {
+  background: #2a2725;
+  /* warm dark card tone */
+  color: #e6ded6;
+  /* soft warm off-white */
+}
+
+
+/* CARDS */
+.app-wrapper.dark .settings-card,
+.app-wrapper.dark .affirmation-card,
+.app-wrapper.dark .about-us-card,
+.app-wrapper.dark .profile-card,
+.app-wrapper.dark .about-card,
+.app-wrapper.dark .mood-card,
+.app-wrapper.dark .habit-card,
+.app-wrapper.dark .auth-card,
+.app-wrapper.dark .journal-card {
+  background: var(--bg-card-dark);
+  color: var(--text-muted-dark);
+  border: 1px solid var(--border-card-dark);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+
+
+.app-wrapper.dark input,
+.app-wrapper.dark textarea,
+.app-wrapper.dark select {
+  background: #221f1d;
+  color: var(--text-main-dark);
+  border: 1px solid #3a3633;
+}
+
+.app-wrapper.dark input::placeholder,
+.app-wrapper.dark textarea::placeholder {
+  color: #9f9488;
+}
+
+
+.app-wrapper.dark button {
+  background: var(--accent-red);
+  color: #ffffff;
+}
+
+.app-wrapper.dark button:hover {
+  background: #a82323;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+  :root {
+    /* Adjust base spacing variables if they existed, 
+       but for now we adjust classes directly */
+  }
+
+  /* Global Layout */
+  .page-center {
+    padding: 20px 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .app-wrapper {
+    padding-top: 100px;
+    /* Reduced top padding */
+    background-size: cover;
+    /* Ensure bg covers */
+    background-position: center;
+  }
+
+  /* Typography Scaling */
+  h1 {
+    font-size: 2rem;
+    /* scale down larger headings */
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  span,
+  li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Buttons */
+  button {
+    width: 100%;
+    /* Full width buttons for easier tapping */
+    min-height: 48px;
+    /* Accessible touch target */
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}

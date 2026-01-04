@@ -1,0 +1,36 @@
+/* Inspiration Page Styles */
+.inspiration {
+  padding: 120px 40px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #8d1b1b;
+}
+
+.inspiration h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inspiration p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* Affirmation box styling (keeps it elegant) */
+.affirmation-box {
+  background: #fff8f3;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-size: 20px;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
